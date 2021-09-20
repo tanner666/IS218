@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html>
 <body>
+<h2>Tanner's Page</h2>
+<h3>Terminal Commands</h3>
+<p>
+pwd --- present working directory (gives full path to present directory)<br>
+&nbsp&nbsp&nbsp&nbsp/ forward slash means absolute directory path (from root of drive)<br>
+&nbsp&nbsp&nbsp&nbspno forward slash mean relative path<br>
+cd &ltfoldername&gt --- change directory<br>
+&nbsp&nbsp&nbsp&nbspcd ..  --- makes directory position move back one<br>
+&nbsp&nbsp&nbsp&nbsp.. is universal signal for reverse<br>
+&nbsp&nbsp&nbsp&nbsp.  is the current directory<br>
+&nbsp&nbsp&nbsp&nbspcd ~ --- takes you to home directory<br>
+ls --- lists everything inside current directory<br>
+&nbsp&nbsp&nbsp&nbsptyping a directory after ls and will list inside of directory<br>
+mkdir &lt new folder name&gt --- creates a new directory<br>
+touch &ltnew file name &gt --- creates an empty file<br>
+rm &ltfolder/file name&gt --- remove folder/file<br>
+&nbsp&nbsp&nbsp&nbsprm -r &ltdirectory&gt<br>
+&nbsp&nbsp&nbsp&nbsp-r means recursive (loops through directory to delete whole directory)<br>
+&nbsp&nbsp&nbsp&nbsprm -f <br>
+&nbsp&nbsp&nbsp&nbsp-f is a force delete (can be used on .git repositories)<br>
+mv &ltoldfilename&gt &ltnewfilename&gt --- renames files<br>
+mv &ltfile name&gt &ltfolder name&gt/<br>
+vi &ltfile name&gt --- opens file editor<br>
+&nbsp&nbsp&nbsp&nbspi = insert<br>
+&nbsp&nbsp&nbsp&nbspesc = exit insert mode<br>
+&nbsp&nbsp&nbsp&nbspshift+: = CL<br>
+&nbsp&nbsp&nbsp&nbspw = write<br>
+&nbsp&nbsp&nbsp&nbspq = quit<br>
+&nbsp&nbsp&nbsp&nbspwq = write and quit<br><br>
 
-<header>
-  <h1>IS218 Webpage</h1>
-  <p>by Tanner Guld</p>
-  <h6>Did this work (master)?</h6>
-</header>
+tab key autocompletes names<br>
+</p>
+<h3>Git Commands</h3>
+<p>git init --- creates a new git respository<br>
+git status --- current directory and commit status info<br>
+git add &ltfilename&gt --- ("." includes all files)<br>
+git commit -m &ltmessage describing commit&gt<br>
+git checkout (-b) &ltbranch&gt (-b makes new branch and switches to it)<br>
+git push &ltremote&gt &ltbranch&gt --- pushes changes to github<br>
+git merge &ltbranch&gt --- merges entered branch to current branch<br>
+</p>
+<h3>Docker Commands</h3>
+<p>
+docker build [options] path/url (of image)<br>
+docker run [options] image [command] [args] --- starts a new container<br>
+docker ps --- lists containers and their ids<br>
+docker stop &ltcontainer-id&gt<br>
+docker rm &ltcontainer-id&gt --- removes container<br>
+docker-compose up --- builds, recreates, and starts docker containers<br>
+docker-compose down --- stops and removes containers started by up<br>
+</p>
 
 </body>
 </html>
